@@ -15,10 +15,10 @@ for (const key in softSkills) {
         if(key == element.innerText){
             element.textContent += ` ${softSkills[key]}`;
 
-            if (Number(softSkills[key].slice(0, -1))<50 && Number(softSkills[key].slice(0, -1))!=100) {
+            if (Number(softSkills[key].slice(0, -1))<50) {
                 element.style.backgroundColor = "red";
 
-            } else if (Number(softSkills[key].slice(0, -1))>50){
+            } else if (Number(softSkills[key].slice(0, -1))>50  && Number(softSkills[key].slice(0, -1))!=100){
                 element.style.backgroundColor = "green";
                 element.style.color ="white";
 
